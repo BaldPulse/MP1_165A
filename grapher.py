@@ -33,7 +33,7 @@ wordListPurity = np.array(wordListPurity)
 print(wordListPurity.shape)
 print(wordListPurity[0:5])
 print(wordListPurity.dtype)
-#np.save('wordListPurity.npy', wordListPurity)
+np.save('wordListPurity.npy', wordListPurity)
 
 for hcent in range(10):
     fig, ax = plt.subplots()
