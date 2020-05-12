@@ -179,8 +179,6 @@ tdata = t.readlines()
 myChoice = ['good', 'well', 'awesome']
 maxi = int(wordListPurity.shape[0] * 0.8)
 for i in range(maxi):
-    if(watchlist.get(wordListPurity[i, 0]) is not None):
-        print(wordListPurity[i,0], purity)
     purity = float(wordListPurity[i,1])
     hig_filt = (1 + 0.18 * np.log(1 + i/maxi))
     low_filt = (1 - 0.20 * np.log(1 + i/maxi))
